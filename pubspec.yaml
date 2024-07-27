@@ -76,6 +76,7 @@ flutter:
      - assets/icons/next.png
      - assets/icons/back.png
      - assets/icons/otp.png
+     - assets/icons/chat.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
