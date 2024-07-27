@@ -33,7 +33,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         "email": email,
         "password": password,
         "referralCode": referralCode.isNotEmpty ? referralCode : null,
-        "userId": "62a833766ec5dafd6780fc85"
+        "userId": "66a22caedca899764b4586a4"
       });
 
       try {
@@ -52,14 +52,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           _passwordController.clear();
           _referralCodeController.clear();
         } else {
-          print(response.statusCode);
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ProductScreen()),
-          );
-          _emailController.clear();
-          _passwordController.clear();
-          _referralCodeController.clear();
         }
       } catch (e) {
         _showErrorDialog('Failed to register. Please try again.');
